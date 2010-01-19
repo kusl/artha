@@ -1,0 +1,62 @@
+Artha - An open cross-platform thesaurus based on WordNet
+=============================================================================
+Copyright (c) 2009, 2010  Sundaram Ramaswamy, <legends2k@yahoo.com>
+
+
+Installation Instructions
+-------------------------
+Artha can be installed from source on most GNU/Linux systems easily, by
+running the following commands in the source base directory:
+
+$ ./configure
+$ make
+
+And then switching to 'root' (through 'su' or 'sudo') and running:
+# make install
+
+Artha could then be started by running 'artha'. 
+
+It is recommended to add Artha to your list of start-up programs. For example, 
+in GNOME, this is done through 'Sessions' in the System -> Preferences menu.
+
+By default, Artha gets installed in /usr/local. Should you wish to change 
+the default installation path, you can do so by setting the 'prefix' parameter 
+of configure. Usually this prefix param is passed with /usr argument, since 
+most applications have /usr as their base directory.
+
+e.g.
+$ ./configure --prefix=/usr
+
+which will configure Artha to get installed in /usr.
+
+
+System Requirements
+-------------------
+Artha has been tested and is known to run well on several GNU/Linux 
+distributions and on i386, x86-64 & PPC platforms, but will probably run 
+well on other UNIX-like systems (BSD, Solaris, etc.) and architectures too.
+
+In order to build artha, as described above, you will need the following 
+"development" libraries installed (typical binary package names are given 
+within braces):
+
+	- wordnet  	>= 3.0		(wordnet-dev)
+	- glib     	>= 2.14		(libglib2.0-dev)
+	- gtk+     	>= 2.12		(libgtk2.0-dev)
+	- dbus-glib	>= 0.74		(libdbus-glib-1-dev)
+
+WordNet can be obtained from http://wordnet.princeton.edu/download. Debian & 
+Fedora based operating systems may have the package in their repositories.
+
+Optionally, Artha will use the following "runtime" libraries, if they are 
+available:
+	- notify	(libnotify.so.1)
+	- enchant	(libenchant.so.1)
+
+
+These 2 libraries are not mandatory for building Artha; however if they are 
+not present, additional features - passive desktop notifications and spelling 
+suggestions - will not be exposed by Artha.
+
+You will also need GNU's gcc and autotools (autoconf and automake) to build.
+
