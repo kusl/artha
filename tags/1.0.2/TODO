@@ -1,0 +1,43 @@
+Users' Wish List:
+* Pronunciations
+* Persistent History
+* Ctrl + W should work for closing the window and Ctrl + Q should quit.
+* Make the status icon's visibility customizable as Always, Never and Auto.
+
+To Do:
+
+* Help docs and Preferences windows are to be added with few more features.
+
+* Ctrl + Z / Undo feature is to be added, particularly to the search text bar.
+
+* When in minimized mode, with notifications, just look up the synonyms, which 
+  should reduce a lot of overhead. When the try icon is clicked, then do the actual 
+  WORDNET_INTERFACE_ALL request call, till then this flag can be deferred.
+
+* When in simple mode, see the 'Parts' tab for 'rupee', it has lot of duplicates.
+
+* Change Kind of (Hyperyms) to Kind of/Way to and Kinds (Hyponyms) to Kinds/Ways
+
+* Should Similar be made as 'Similar/Related/See also'? Checkout Hinduism's similar.
+
+* Keep 2 buttons expand all/contract all for relative trees
+
+* Try, when the window is visible, searching 'man' and do the same when in tray 
+  (with notifications). Performance is differing? (Once the performance got hit 
+  when it was visible, but not very sure)
+
+* Clearing search history
+
+* Auto complete of the query combo using history or the whole dict. index?
+
+* Wrapped text should get aligned with the definition start and not the sense count start
+
+* Check if this is possible => farcry should be separated into "far cry" and searched
+
+Settings
+~~~~~~~~
+Start-up mode -> tray/show
+Notification system -> duration, etc.
+Watch clipboard/selection
+Fonts and Colours
+History storage pattern -> count/days to keep, should it be cleared on exit? etc.
